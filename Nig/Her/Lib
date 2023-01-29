@@ -30,7 +30,7 @@ local library = {
 	tabs = {},
 	draggable = true,
 	flags = {},
-	title = "Niggatron.sol | Universal",
+	title = "Amnesty - Universal",
 	open = false,
 	mousestate = inputService.MouseIconEnabled,
 	popup = nil,
@@ -40,8 +40,8 @@ local library = {
 	notifications = {},
 	tabSize = 0,
 	theme = {},
-	foldername = "Niggatron.sol/Universal",
-	fileext = ".Nigga"
+	foldername = "amnesty/universal",
+	fileext = ".sex"
 }
 
 getgenv().library = library
@@ -2601,14 +2601,15 @@ end});
 -- [Background List]
 local backgroundlist = {
     Maxwell = "rbxassetid://12222223187",
-    WackyCreature = "rbxassetid://10830725670",
-    AmongUs = "rbxassetid://5747127665",
-    FloppaSprite = "rbxassetid://9846392433",
+    Floral = "rbxassetid://5553946656",
+    Flowers = "rbxassetid://6071575925",
+    Circles = "rbxassetid://6071579801",
+    Hearts = "rbxassetid://6073763717",
     None = "nil"
 };
 
 -- [Background List]
-local back = SettingSection:AddList({text = "Background", max = 5, flag = "background", values = {"Maxwell", "WackyCreature", "AmongUs", "FloppaSprite", "None"}, value = "None", callback = function(v)
+local back = SettingSection:AddList({text = "Background", max = 5, flag = "background", values = {"Maxwell", "Floral", "Flowers", "Circles", "Hearts", "None"}, value = "None", callback = function(v)
     if library.main then
         library.main.Image = backgroundlist[v];
     end
@@ -2630,6 +2631,10 @@ SettingSection:AddSlider({text = "Tile Size", min = 50, max = 500, value = 50, c
     if library.main then
         library.main.TileSize = UDim2.new(0, size, 0, size);
     end
+end});
+
+-- [Discord Button]
+SettingSection:AddButton({text = "Discord", callback = function()
 end});
 
 -- [Config Box]
