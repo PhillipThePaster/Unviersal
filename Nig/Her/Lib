@@ -40,8 +40,8 @@ local library = {
 	notifications = {},
 	tabSize = 0,
 	theme = {},
-	foldername = "amnesty/universal",
-	fileext = ".sex"
+	foldername = "Niggatron/universal",
+	fileext = ".nigga"
 }
 
 getgenv().library = library
@@ -141,7 +141,7 @@ function library:Unload()
 	getgenv().library = nil
 end
 
-function library:LoadConfig(config)
+function library:Load(config)
 	if table.find(self:GetConfigs(), config) then
 		local Read, Config = pcall(function()
 			return game:GetService"HttpService":JSONDecode(readfile(self.foldername .. "/" .. config .. self.fileext))
