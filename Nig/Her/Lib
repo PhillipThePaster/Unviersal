@@ -2622,7 +2622,7 @@ end});
 -- [Background Color Picker]
 back:AddColor({flag = "backgroundcolor", color = Color3.new(), callback = function(color)
     if library.main then
-        library.main.ImageColor3 = color;
+        library.main.ImageColor3= color;
     end
 end, trans = 1, calltrans = function(trans)
     if library.main then
@@ -2631,15 +2631,12 @@ end, trans = 1, calltrans = function(trans)
 end});
 
 -- [Tile Size Slider]
-SettingSection:AddSlider({text = "Tile Size", min = 50, max = 500, value = 50, callback = function(size)
+SettingSection:AddSlider({text = "Background Size", min = 50, max = 1000, value = 600, callback = function(size)
     if library.main then
         library.main.TileSize = UDim2.new(0, size, 0, size);
     end
 end});
 
--- [Discord Button]
-SettingSection:AddButton({text = "Discord", callback = function()
-end});
 
 -- [Config Box]
 ConfigSection:AddBox({text = "Config Name", skipflag = true});
