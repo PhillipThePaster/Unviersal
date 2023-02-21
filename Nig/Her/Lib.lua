@@ -26,10 +26,6 @@ end
 
 -- [UI Library Settings]
 local library = {
-	if game.PlaceId == 3297964905 then 
-          title = "Niggatron.sol |  Weaponry",
-	  foldername = "Niggatron/Weaponry",
-        else
 	tabs = {},
 	draggable = true,
 	flags = {},
