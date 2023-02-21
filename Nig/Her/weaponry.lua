@@ -1363,7 +1363,7 @@ local function createColorPickerWindow(option)
 		AnchorPoint = Vector2.new(0, 1),
 		Position = UDim2.new(0, 6, 1, -6),
 		Size = UDim2.new(1, option.trans and -28 or -12, 0, 10),
-		BackgroundColor3 = Color3.new(1, 1, 1),
+		BackgroundColor3 = Color3.new(255, 255, 255),
 		BorderColor3 = Color3.new(),
 		Parent = option.mainHolder
 	})
