@@ -29,7 +29,7 @@ local library = {
 	tabs = {},
 	draggable = true,
 	flags = {},
-	title = [[Niggatron.sol <font color="rgb(0, 0, 255)">Weaponry</font>]],
+	title = Niggatron.sol <font color="rgb(0, 0, 255)">Weaponry</font>,
 	open = false,
 	mousestate = inputService.MouseIconEnabled,
 	popup = nil,
