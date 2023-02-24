@@ -2608,7 +2608,9 @@ local backgroundlist = {
     Astolfo = "rbxassetid://2085904966",
     Astolfo2 = "rbxassetid://9327507243",
     Felix = "rbxassetid://4344603092",
+    Csgo = "rbxassetid://11177150292",
     None = "nil"
+	
 };
 
 -- [Background List]
