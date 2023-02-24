@@ -2603,18 +2603,18 @@ local backgroundlist = {
     WackyCreature = "rbxassetid://10830725670",
     AmongUs = "rbxassetid://5747127665",
     FloppaSurvior = "rbxassetid://11900934801",
-    Cheese = "rbxassetid://8680505367",
+    Csgo = "rbxassetid://11177150292",
     NeonFloppa = "rbxassetid://10231117698",
     Astolfo = "rbxassetid://2085904966",
     Astolfo2 = "rbxassetid://9327507243",
     Felix = "rbxassetid://4344603092",
-    Csgo = "rbxassetid://11177150292",
+    
     None = "nil"
 	
 };
 
 -- [Background List]
-local back = SettingSection:AddList({text = "Background", max = 11, flag = "background", values = {"Maxwell", "WackyCreature", "AmongUs", "FloppaSurvior", "Cheese", "NeonFloppa","Astolfo","Astolfo2","Felix","Csgo", "None"}, value = "None", callback = function(v)
+local back = SettingSection:AddList({text = "Background", max = 10, flag = "background", values = {"Maxwell", "WackyCreature", "AmongUs", "FloppaSurvior", "Csgo", "NeonFloppa","Astolfo","Astolfo2","Felix", "None"}, value = "None", callback = function(v)
     if library.main then
         library.main.Image = backgroundlist[v];
     end
