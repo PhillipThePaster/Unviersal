@@ -2597,17 +2597,6 @@ SettingSection:AddColor({text = "Accent Color", flag = "Menu Accent Color", colo
     end
 end});
 
-
-
-
-   SettingSection:AddLabel("Player Name:"..game.Players.LocalPlayer.Name);
-   SettingSection:AddLabel("Player Id:"..game.Players.LocalPlayer.UserId);
-   SettingSection:AddLabel("Account Age:"..game.Players.LocalPlayer.AccountAge);
-
-   SettingSection:AddLabel("Game:"..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name);
-   SettingSection:AddLabel("Game Id:"..game.PlaceId);
-
-
 -- [Background List]
 local backgroundlist = {
     Maxwell = "rbxassetid://12222223187",
