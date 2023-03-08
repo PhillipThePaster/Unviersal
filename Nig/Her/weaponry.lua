@@ -2639,6 +2639,24 @@ SettingSection:AddSlider({text = "Background Size", min = 50, max = 1000, value 
 end});
 
 
+
+
+
+
+
+
+
+Gameinfo = SettingsColumn:AddSection("Gameinfo"); 
+
+   GameInfon:AddLabel("Player Name:"..game.Players.LocalPlayer.Name);
+   GameInfon:AddLabel("Player Id:"..game.Players.LocalPlayer.UserId);
+   GameInfon:AddLabel("Account Age:"..game.Players.LocalPlayer.AccountAge);
+
+   GameInfon:AddLabel("Game:"..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name);
+   GameInfon:AddLabel("Game Id:"..game.PlaceId);
+
+
+
 -- [Config Box]
 ConfigSection:AddBox({text = "Config Name", skipflag = true});
 
